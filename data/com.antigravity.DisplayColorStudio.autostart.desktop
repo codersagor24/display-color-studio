@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Display & Color Studio Autostart
+Comment=Apply saved display brightness and color temperature on login
+Exec=display-color-studio --apply-saved
+Terminal=false
+NoDisplay=true
+X-GNOME-Autostart-enabled=true

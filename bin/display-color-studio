@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+"""
+Launcher executable for Display & Color Studio.
+"""
+
+import sys
+import os
+
+# Ensure package can be imported from local repository if not installed system-wide
+repo_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if os.path.exists(os.path.join(repo_dir, 'display_color_studio')):
+    sys.path.insert(0, repo_dir)
+
+from display_color_studio.cli import main
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,40 @@
+[Desktop Entry]
+Name=Display & Color Studio
+GenericName=Display Calibration & Color Profiles
+Comment=Hardware LUT Color Calibration, Temperature & Brightness for Wayland
+Exec=display-color-studio
+Icon=com.antigravity.DisplayColorStudio
+Terminal=false
+Type=Application
+Categories=Settings;HardwareSettings;Graphics;Utility;
+Keywords=color;display;brightness;night light;gamma;temperature;calibration;studio;d65;srgb;wayland;
+StartupNotify=true
+Actions=Studio;Daylight;Reading;Cinema;Gaming;Night;Reset;
+
+[Desktop Action Studio]
+Name=🎯 Studio Reference (D65)
+Exec=display-color-studio --preset studio
+
+[Desktop Action Daylight]
+Name=☀️ Balanced Daylight (5800K)
+Exec=display-color-studio --preset daylight
+
+[Desktop Action Reading]
+Name=📖 Paper & Reading (5000K)
+Exec=display-color-studio --preset reading
+
+[Desktop Action Cinema]
+Name=🎬 Cinema & Movie (4500K)
+Exec=display-color-studio --preset cinema
+
+[Desktop Action Gaming]
+Name=🎮 Gaming & Vivid (6200K)
+Exec=display-color-studio --preset gaming
+
+[Desktop Action Night]
+Name=🌙 Deep Night (2800K)
+Exec=display-color-studio --preset bedtime
+
+[Desktop Action Reset]
+Name=🔄 Reset to Studio D65
+Exec=display-color-studio --reset
